@@ -24,5 +24,10 @@ CMake is a framework that eases C language development, alongside giving you the
 3. Search for CMake Tools and install it.
 
 ### Running the program:
-1. Open the folder on VS Code and click on the run icon in the far-down menu. Do NOT run the program using other extensions besides CMake's debugger.
+1. Open the folder on VS Code
+2. Press CTRL + SHIFT + P
+3. Write: CMake: Configure. This will create the necessary build files.
+4. A drop-down menu will show up asking you to set up the compiler kit, search for the msvs64 compiler. 
+5. Click on the run icon in the far-down menu. Do NOT run the program using other extensions besides CMake's debugger.
+
 
