@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DLIBDEFLATE_DLL @CMakeFiles/TPAlgo_Project.dir/includes_C.rsp -g -std=gnu11   -mfpmath=sse -msse -msse2 -o CMakeFiles\\TPAlgo_Project.dir\\main.c.obj -c C:\\Users\\LENOVO\\Desktop\\TPAlgo_Project_CMake\\main.c",
+  "file": "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/main.c",
+  "output": "CMakeFiles/TPAlgo_Project.dir/main.c.obj"
+}
+]
