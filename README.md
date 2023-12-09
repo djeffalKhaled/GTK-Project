@@ -1,5 +1,37 @@
 # TPAlgo-Project
+## FRANCAIS:
+## Installation des dépendances GTK+ :
 
+### MSVS :
+
+MSVS est le programme d'installation principal de la bibliothèque GTK, suivez attentivement les étapes :
+
+1. Téléchargez MSVS depuis : [https://www.msys2.org/](https://www.msys2.org/).
+2. Ouvrez MSVS et exécutez les commandes suivantes dans le terminal MSVS :
+    ```bash
+    pacman -S mingw-w64-x86_64-gtk4
+3. Exécutez cette commande pour installer le compilateur, acceptez chaque option en cliquant sur Entrée :
+    ```bash
+    -S mingw-w64-x86_64-toolchain base-devel
+4. Assurez-vous que MSVS se trouve dans le répertoire C:/msys64.
+5. Accédez aux variables d'environnement et sous le chemin, insérez : C:/msys64/mingw64/bin
+
+### CMake :
+
+CMake est un framework qui facilite le développement du langage C, tout en vous offrant la possibilité d'exécuter votre programme.
+1. Accédez aux extensions de code VS
+2. Recherchez CMake et installez-le.
+3. Recherchez CMake Tools et installez-le.
+
+### Exécution du programme :
+1. Ouvrez le dossier sur VS Code
+3. Si un dossier de construction n'est pas automatiquement créé, appuyez sur CTRL + MAJ + P. S'il est déjà créé, passez à 5.
+4. Écrivez : CMake : Configurer. Cela créera les fichiers de construction nécessaires.
+5. Un menu déroulant peut apparaître vous demandant de configurer le kit du compilateur, définissez celui sous le répertoire msvs64.
+6. Cliquez sur l'icône Exécuter dans le menu le plus bas. N'exécutez PAS le programme en utilisant d'autres extensions que le débogueur de CMake.
+
+
+## ENGLISH:
 ## Installing GTK+ Dependencies:
 
 ### MSVS:
