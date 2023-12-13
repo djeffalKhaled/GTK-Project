@@ -1,5 +1,8 @@
 # TPAlgo-Project
-## FRANCAIS:
+Projet de test pour TPAlgo. Il s'agit d'une application en langage C utilisant GTK4 qui représentait le trie par insertion dans une liste chaînée. Il crée dynamiquement une liste basée sur les valeurs d'entrée sous la fonction build_linked_list.
+<img src="https://github.com/djeffalKhaled/TPAlgo-Project/assets/143727646/b4ac4eac-7457-4502-8292-0805cf12de64.jpg" alt="ProgramGit" width="900">
+
+## Probleme
 ## Installation des dépendances GTK+ :
 
 ### MSVS :
