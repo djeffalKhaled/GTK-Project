@@ -37,9 +37,7 @@ void build_linked_list() {
     add_node(73);
     add_node(18);
     add_node(56);
-    add_node(50);
-    add_node(25);
-    add_node(100);
+    add_node(23);
 }
 static void activate(GtkApplication *app, gpointer user_data)
 {
@@ -68,11 +66,16 @@ static void activate(GtkApplication *app, gpointer user_data)
         gtk_frame_set_child(GTK_FRAME(frame), label);
         gtk_fixed_put(GTK_FIXED(FixedLayout), frame, i, 100);
 
+        // Frame that represents how a typical next element looks
+        frame = gtk_frame_new("");
+        gtk_widget_set_size_request(frame, 100, 100);
+        gtk_fixed_put(GTK_FIXED(FixedLayout), frame, i+100, 100);
+
         // Creating a gtk seperator to connect each element like a pointer
         GtkWidget *pointer = gtk_frame_new("");
         gtk_widget_set_size_request(pointer, 100, 1);
-        gtk_fixed_put(GTK_FIXED(FixedLayout), pointer, i+100, 135);
-        i = i + 200;
+        gtk_fixed_put(GTK_FIXED(FixedLayout), pointer, i+200, 135);
+        i = i + 300;
         p = p->next;
     }
     // adding the last elem as a representation of a NULL
