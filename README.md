@@ -3,7 +3,6 @@ Projet de test pour TPAlgo. Il s'agit d'une application en langage C utilisant G
 
 <img src="https://github.com/djeffalKhaled/TPAlgo-Project/assets/143727646/b4ac4eac-7457-4502-8292-0805cf12de64.jpg" alt="ProgramGit" width="900">
 
-## Probleme
 ## Installation des dépendances GTK+ :
 
 ### MSVS :
