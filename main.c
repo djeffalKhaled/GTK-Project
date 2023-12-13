@@ -1,59 +1,91 @@
 #include <gtk/gtk.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
-void animate()
-{
-    // fills an array with 0 1 2 3
-    char strs[4][10];
-    for (int i = 0; i < 4; i++)
-    {
-        snprintf(strs[i], sizeof(strs[i]), "%d", i);
-    }
-    for (int i = 0; i < 4; i++)
-    {
-        Sleep(1000);
-        printf("%s", strs[i]);
-    }
+typedef struct Node {
+    int val;
+    struct Node* next;
+} Node;
 
-}       
+Node* head = NULL;
+
+void add_node(int val) {
+    Node* p = (Node*)malloc(sizeof(Node));
+    if (p == NULL) {
+        perror("Failed to allocate memory for a new node");
+        exit(EXIT_FAILURE);
+    }
+    p->val = val;
+    p->next = NULL;
+
+    if (head == NULL) {
+        head = p;
+    }
+    else {
+        Node* last = head;
+        while (last->next != NULL)
+        {
+            last = last->next;
+        }
+        last->next = p;
+    }
+    
+}
+
+void build_linked_list() {
+    // Set the list properties here
+    add_node(42);
+    add_node(73);
+    add_node(18);
+    add_node(56);
+    add_node(50);
+    add_node(25);
+    add_node(100);
+}
 static void activate(GtkApplication *app, gpointer user_data)
 {
     // Window settings
     GtkWidget *window;
     window = gtk_application_window_new(app);
-    gtk_window_set_title(GTK_WINDOW(window), "Array Sorting Animation");
-    gtk_window_set_default_size(GTK_WINDOW(window), 500, 500);
+    gtk_window_set_title(GTK_WINDOW(window), "Linked List Sorting Animation");
+    gtk_window_set_default_size(GTK_WINDOW(window), 500, 400);
+    
+    GtkWidget *FixedLayout = gtk_fixed_new();
+    gtk_window_set_child(GTK_WINDOW(window), FixedLayout);
 
-    // gtk_widnow_set_child is a function that adds any object inside the window
+    // List building, main logic for showing the basic GUI dynamically
+    build_linked_list();
+    Node *p = head;
+    int i = 0;
+    while (p != NULL)
+    {
+        printf("Elements: %d\n", p->val);
+        char strElement[20];
+        snprintf(strElement, sizeof(strElement), "%d", p->val);
+        GtkWidget *frame = gtk_frame_new("");
+        gtk_widget_set_size_request(frame, 100, 100);
+        GtkWidget *label = gtk_label_new(strElement);
+        gtk_widget_set_margin_bottom(label, 35);
+        gtk_frame_set_child(GTK_FRAME(frame), label);
+        gtk_fixed_put(GTK_FIXED(FixedLayout), frame, i, 100);
 
-    // Grid Container for representing the array grid
-    GtkWidget *grid = gtk_grid_new();
-    gtk_widget_set_halign (grid, GTK_ALIGN_CENTER);
-    gtk_widget_set_valign (grid, GTK_ALIGN_CENTER);
-    gtk_window_set_child (GTK_WINDOW (window), grid); 
-
-
-
-    // Box i = 0
-    GtkWidget *button = gtk_button_new_with_label ("Button 0");
-    gtk_widget_set_size_request(button, 100, 100);
-    gtk_grid_attach (GTK_GRID (grid), button, 0, 0, 1, 1);
-
-    // box i = 1
-    GtkWidget *button2 = gtk_button_new_with_label("Button 1");
-    gtk_widget_set_size_request(button2, 100, 100);
-    gtk_grid_attach(GTK_GRID(grid), button2, 1, 0, 1, 1);
-
-    // box i = 3
-    GtkWidget *button3 = gtk_button_new_with_label("Button 2");
-    gtk_widget_set_size_request(button3, 100, 100);
-    gtk_grid_attach(GTK_GRID(grid), button3, 2, 0, 1, 1);
-
-    // box i = 4
-    GtkWidget *button4 = gtk_button_new_with_label("Button 3");
-    gtk_widget_set_size_request(button4, 100, 100);
-    gtk_grid_attach(GTK_GRID(grid), button4, 3, 0, 1, 1);
+        // Creating a gtk seperator to connect each element like a pointer
+        GtkWidget *pointer = gtk_frame_new("");
+        gtk_widget_set_size_request(pointer, 100, 1);
+        gtk_fixed_put(GTK_FIXED(FixedLayout), pointer, i+100, 135);
+        i = i + 200;
+        p = p->next;
+    }
+    // adding the last elem as a representation of a NULL
+    if (p == NULL)
+    {
+        GtkWidget *frame = gtk_frame_new("");
+        gtk_widget_set_size_request(frame, 100, 100);
+        GtkWidget *label = gtk_label_new("NULL");
+        gtk_widget_set_margin_bottom(label, 35);
+        gtk_frame_set_child(GTK_FRAME(frame), label);
+        gtk_fixed_put(GTK_FIXED(FixedLayout), frame, i, 100);
+        i = i + 200;
+    }
 
     gtk_window_present(GTK_WINDOW(window));
 }
@@ -71,3 +103,4 @@ int main(int argc, char **argv)
 
     return status;
 }
+
