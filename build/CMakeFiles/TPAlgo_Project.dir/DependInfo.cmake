@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/main.c" "CMakeFiles/TPAlgo_Project.dir/main.c.obj" "gcc" "CMakeFiles/TPAlgo_Project.dir/main.c.obj.d"
+  "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists/main.c" "CMakeFiles/TPAlgo_Project.dir/main.c.obj" "gcc" "CMakeFiles/TPAlgo_Project.dir/main.c.obj.d"
   "" "TPAlgo_Project.exe" "gcc" "CMakeFiles/TPAlgo_Project.dir/link.d"
   )
 

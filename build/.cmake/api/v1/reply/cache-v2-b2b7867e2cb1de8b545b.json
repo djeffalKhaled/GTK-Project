@@ -34,18 +34,6 @@
 			"value" : "C:/msys64/mingw64/bin/ar.exe"
 		},
 		{
-			"name" : "CMAKE_BACKWARDS_COMPATIBILITY",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "For backwards compatibility, what version of CMake commands and syntax should this version of CMake try to support."
-				}
-			],
-			"type" : "STRING",
-			"value" : "2.4"
-		},
-		{
 			"name" : "CMAKE_BUILD_TYPE",
 			"properties" : 
 			[
@@ -67,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build"
+			"value" : "c:/Users/LENOVO/Desktop/TP_Algo Linked Lists/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -167,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
@@ -311,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/gcc.exe"
 		},
 		{
@@ -599,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -671,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake"
+			"value" : "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -683,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/GTKTutorial"
+			"value" : "C:/Program Files (x86)/TPAlgoProject"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1298,18 +1286,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "EXECUTABLE_OUTPUT_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all executables."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
 			"properties" : 
 			[
@@ -1742,54 +1718,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "GTKTutorial_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build"
-		},
-		{
-			"name" : "GTKTutorial_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "GTKTutorial_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake"
-		},
-		{
-			"name" : "LIBRARY_OUTPUT_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all libraries."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
 			"name" : "PKG_CONFIG_ARGN",
 			"properties" : 
 			[
@@ -1831,7 +1759,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build"
+			"value" : "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists/build"
 		},
 		{
 			"name" : "TPAlgoProject_IS_TOP_LEVEL",
@@ -1855,43 +1783,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake"
-		},
-		{
-			"name" : "TPAlgo_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build"
-		},
-		{
-			"name" : "TPAlgo_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "TPAlgo_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake"
+			"value" : "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

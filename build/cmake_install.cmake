@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake
+# Install script for directory: C:/Users/LENOVO/Desktop/TP_Algo Linked Lists
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/GTKTutorial")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/TPAlgoProject")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/LENOVO/Desktop/TPAlgo_Project_CMake/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/LENOVO/Desktop/TP_Algo Linked Lists/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

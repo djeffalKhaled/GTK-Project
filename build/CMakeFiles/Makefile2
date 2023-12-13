@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\LENOVO\Desktop\TPAlgo_Project_CMake
+CMAKE_SOURCE_DIR = "C:\Users\LENOVO\Desktop\TP_Algo Linked Lists"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\LENOVO\Desktop\TPAlgo_Project_CMake\build
+CMAKE_BINARY_DIR = "C:\Users\LENOVO\Desktop\TP_Algo Linked Lists\build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/TPAlgo_Project.dir/clean
 CMakeFiles/TPAlgo_Project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TPAlgo_Project.dir\build.make CMakeFiles/TPAlgo_Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TPAlgo_Project.dir\build.make CMakeFiles/TPAlgo_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\LENOVO\Desktop\TPAlgo_Project_CMake\build\CMakeFiles --progress-num=1,2 "Built target TPAlgo_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\LENOVO\Desktop\TP_Algo Linked Lists\build\CMakeFiles" --progress-num=1,2 "Built target TPAlgo_Project"
 .PHONY : CMakeFiles/TPAlgo_Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TPAlgo_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\LENOVO\Desktop\TPAlgo_Project_CMake\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\LENOVO\Desktop\TP_Algo Linked Lists\build\CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TPAlgo_Project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\LENOVO\Desktop\TPAlgo_Project_CMake\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\LENOVO\Desktop\TP_Algo Linked Lists\build\CMakeFiles" 0
 .PHONY : CMakeFiles/TPAlgo_Project.dir/rule
 
 # Convenience name for target.
