@@ -1,40 +1,8 @@
 # TPAlgo-Project
-Projet de test pour TPAlgo. Il s'agit d'une application en langage C utilisant GTK4 qui représentait le trie par insertion dans une liste chaînée. Il crée dynamiquement une liste basée sur les valeurs d'entrée sous la fonction build_linked_list.
+Test project for TP Algo, a module for university. This is a C language application using GTK4 that represented insertion sort in a linked list. It dynamically creates a list based on the input values under the build_linked_list() function.
 
 <img src = "https://github.com/djeffalKhaled/TPAlgo-Project/assets/143727646/bb827f10-610e-4a6b-9a46-c1835c46ccf6" alt = "ProgramGit2" width = "900">
 
-## Installation des dépendances GTK+ :
-
-### MSVS :
-
-MSVS est le programme d'installation principal de la bibliothèque GTK, suivez attentivement les étapes :
-
-1. Téléchargez MSVS depuis : [https://www.msys2.org/](https://www.msys2.org/).
-2. Ouvrez MSVS et exécutez les commandes suivantes dans le terminal MSVS :
-    ```bash
-    pacman -S mingw-w64-x86_64-gtk4
-3. Exécutez cette commande pour installer le compilateur, acceptez chaque option en cliquant sur Entrée :
-    ```bash
-    -S mingw-w64-x86_64-toolchain base-devel
-4. Assurez-vous que MSVS se trouve dans le répertoire C:/msys64.
-5. Accédez aux variables d'environnement et sous le chemin, insérez : C:/msys64/mingw64/bin
-
-### CMake :
-
-CMake est un framework qui facilite le développement du langage C, tout en vous offrant la possibilité d'exécuter votre programme.
-1. Accédez aux extensions de code VS
-2. Recherchez CMake et installez-le.
-3. Recherchez CMake Tools et installez-le.
-
-### Exécution du programme :
-1. Ouvrez le dossier sur VS Code
-3. Si un dossier de construction n'est pas automatiquement créé, appuyez sur CTRL + MAJ + P. S'il est déjà créé, passez à 5.
-4. Écrivez : CMake : Configurer. Cela créera les fichiers de construction nécessaires.
-5. Un menu déroulant peut apparaître vous demandant de configurer le kit du compilateur, définissez celui sous le répertoire msvs64.
-6. Cliquez sur l'icône Exécuter dans le menu le plus bas. N'exécutez PAS le programme en utilisant d'autres extensions que le débogueur de CMake.
-
-
-## ENGLISH:
 ## Installing GTK+ Dependencies:
 
 ### MSVS:
