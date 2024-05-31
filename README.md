@@ -1,5 +1,7 @@
 # TPAlgo-Project
-Test project for TP Algo, a module for university. This is a C language application using GTK4 that represented insertion sort in a linked list. It dynamically creates a list based on the input values under the build_linked_list() function.
+Research project for TP Algo, refer to https://github.com/djeffalKhaled/Projet-TP-Algo for the finished product. 
+<br>
+This is a C language application using GTK4 that represented insertion sort in a linked list. It dynamically creates a list based on the input values under the build_linked_list() function.
 
 <img src = "https://github.com/djeffalKhaled/TPAlgo-Project/assets/143727646/bb827f10-610e-4a6b-9a46-c1835c46ccf6" alt = "ProgramGit2" width = "900">
 
